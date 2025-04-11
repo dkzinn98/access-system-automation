@@ -1,7 +1,7 @@
-import pyautogui
+import pyautogui # type: ignore
 import time
-import pandas as pd
-import keyboard
+import pandas as pd # type: ignore
+import keyboard # type: ignore
 import threading
 import io
 import sys
