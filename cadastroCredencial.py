@@ -1,9 +1,9 @@
 import io
 import sys
-import pyautogui
+import pyautogui # type: ignore
 import time
-import pandas as pd
-import keyboard
+import pandas as pd # type: ignore
+import keyboard # type: ignore
 import threading
 
 # === FORÇA UTF-8 NO TERMINAL ===
@@ -47,33 +47,33 @@ def abrir_sistema():
     time.sleep(3)
 
 def login():
-    pyautogui.click(x=799, y=453) # ==> click do campo de user (Login)
+    pyautogui.click(x=986, y=569)  # Campo do login
     pyautogui.write("deryk.silva")
     pyautogui.press("tab")
     pyautogui.write("!Deryksilva10")
     pyautogui.press("enter")
-    time.sleep(1)
+    time.sleep(2)
 
 def navegar_ate_cadastrar():
-    pyautogui.click(x=1007, y=199)  # AMBIENTE FÍSICO
+    pyautogui.click(x=1260, y=261)  # AMBIENTE FÍSICO
     time.sleep(1)
-    pyautogui.click(x=1026, y=552)  # CREDENCIAL
+    pyautogui.click(1261, y=688)  # CREDENCIAL
     time.sleep(1)
-    pyautogui.click(x=1241, y=720)  # CADASTRAR
+    pyautogui.click(x=1529, y=889)  # CADASTRAR
     time.sleep(2) 
 
 def cadastrar_credencial(cpf):
-    pyautogui.click(x=897, y=327) # ==> SELECIONA CAMPO NÚMERO
+    pyautogui.click(x=1134, y=411) # ==> SELECIONA CAMPO NÚMERO
     pyautogui.write(cpf) # ==> DIGITA O CPF
-    pyautogui.click(x=1215, y=433) # ==> SELECIONA CREDENCIAL PUBLICA
+    pyautogui.click(x=1476, y=545) # ==> SELECIONA CREDENCIAL PUBLICA
     time.sleep(1)
-    pyautogui.click(x=516, y=434) # ==> SELECIONA TECNOLOGIA
+    pyautogui.click(x=678, y=548) # ==> SELECIONA TECNOLOGIA
     time.sleep(1)
-    pyautogui.click(x=517, y=520) # ==> SELECIONA PROXIMIDADE
+    pyautogui.click(x=569, y=654) # ==> SELECIONA PROXIMIDADE
     time.sleep(1)
-    pyautogui.click(x=1160, y=762) # ==> SALVAR
+    pyautogui.click(x=1410, y=959) # ==> SALVAR
     time.sleep(1)
-    pyautogui.click(x=1241, y=720)  # ==> CADASTRAR NOVAMENTE
+    pyautogui.click(x=1529, y=889)  # ==> CADASTRAR NOVAMENTE
 
 def registrar_log(cpf):
     datahora = time.strftime("%Y-%m-%d %H:%M:%S")

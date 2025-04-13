@@ -48,7 +48,7 @@ def abrir_sistema():
     time.sleep(1)
 
 def login():
-    pyautogui.click(x=805, y=453)  # Campo do login
+    pyautogui.click(x=986, y=569)  # Campo do login
     pyautogui.write("deryk.silva")
     pyautogui.press("tab")
     pyautogui.write("!Deryksilva10")
@@ -56,43 +56,43 @@ def login():
     time.sleep(2)
 
 def navegar_ate_cadastrar():
-    pyautogui.click(x=304, y=212)  # Aba "Pessoas"
+    pyautogui.click(x=359, y=268)  # Aba "Pessoas"
     time.sleep(1)
-    pyautogui.click(x=364, y=289)  # Cadastro de Pessoa
+    pyautogui.click(x=355, y=372)  # Cadastro de Pessoa
     time.sleep(1)
-    pyautogui.click(x=1246, y=720)  # Botão "Cadastrar"
+    pyautogui.click(x=1536, y=899)  # Botão "Cadastrar"
 
 def cadastrar_pessoa(nome, cpf):
-    pyautogui.click(x=467, y=351)  # Campo MATRÍCULA = CPF do usuário
+    pyautogui.click(x=555, y=438)  # Campo MATRÍCULA = CPF do usuário
     pyautogui.write(cpf)
     pyautogui.press("tab")
     pyautogui.write(nome, interval=0.01)
     time.sleep(1)
 
-    pyautogui.click(x=499, y=379)  # Situação
+    pyautogui.click(x=692, y=464)  # Situação
     time.sleep(1)
-    pyautogui.click(x=453, y=416)  # Ativo
+    pyautogui.click(x=556, y=522)  # Ativo
     time.sleep(1)
 
-    pyautogui.click(x=945, y=400)  # Lupa Estrutura
+    pyautogui.click(x=1145, y=503)  # Lupa Estrutura
     time.sleep(1)
-    pyautogui.click(x=623, y=424)  # Unidade
+    pyautogui.click(x=741, y=512)  # Unidade
     time.sleep(1)
-    pyautogui.click(x=884, y=624)  # OK
+    pyautogui.click(x=1061, y=752)  # OK
     time.sleep(1)
     
-    pyautogui.click(x=425, y=310)  # Aba Credenciais
+    pyautogui.click(x=477, y=390)  # Aba Credenciais
     time.sleep(1)
-    pyautogui.click(x=437, y=365)  # Campo Número
+    pyautogui.click(x=513, y=457)  # Campo Número
     pyautogui.write(cpf)
 
-    pyautogui.click(x=755, y=363)  # Botão Adicionar
+    pyautogui.click(x=937, y=453)  # Botão Adicionar
     time.sleep(1)
-    pyautogui.click(x=1164, y=765)  # Botão Salvar
+    pyautogui.click(x=1400, y=955)  # Botão Salvar
     time.sleep(2)
 
-    pyautogui.click(x=1246, y=720)  # Botão Cadastrar (loop)
-    time.sleep(1)
+    pyautogui.click(x=1536, y=899)  # Botão Cadastrar (loop)
+    time.sleep(2)
 
 def registrar_log(nome, cpf):
     datahora = time.strftime("%Y-%m-%d %H:%M:%S")

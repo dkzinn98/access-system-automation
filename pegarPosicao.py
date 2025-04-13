@@ -1,5 +1,5 @@
 import time
-import pyautogui
+import pyautogui # type: ignore
 
 time.sleep(2)
 print(pyautogui.position())
